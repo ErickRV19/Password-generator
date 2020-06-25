@@ -1,5 +1,6 @@
 var btnGenerar = document.getElementById("generar");
 var mensaje = document.querySelector(".alerta");
+var spacePassword = document.querySelector(".password");
 
 btnGenerar.onclick = function generarPassword() {
     mensaje.removeAttribute("hidden");
@@ -49,4 +50,5 @@ function generar() {
         }
     }
     console.log(password);
+    spacePassword.innerHTML = password;
 }
