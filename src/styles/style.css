@@ -50,3 +50,13 @@ footer {
     text-align: center;
     color: rgb(95, 95, 95);
 }
+
+@media screen and (max-width: 400px) {
+    .card1 {
+        border-radius: 2em;
+        padding: 3em 2em;
+    }
+    .content {
+        margin: 4vw 2vh;
+    }
+}
