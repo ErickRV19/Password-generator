@@ -5,6 +5,7 @@ var mensaje = document.querySelector(".alerta");
 var spacePassword = document.querySelector(".password");
 var checkMayuscula = document.getElementById("checkMayuscula");
 var checkSimbolos = document.getElementById("checkSimbolos");
+var recomendacion = document.querySelector(".recomendacion");
 let carac = 0,
     aux = 0;
 
@@ -15,9 +16,13 @@ btnGenerar.onclick = function generarPassword() {
 
 btncaracter8.onclick = function caracter8() {
     carac = 8;
+    recomendacion.removeAttribute("hidden");
+    recomendacion.innerHTML =
+        "!!! Se recomienda 15 caracteres para mayor seguridad !!!";
     aux += 1;
 };
 btncaracter15.onclick = function caracter8() {
+    recomendacion.setAttribute("hidden", "");
     carac = 15;
     aux += 1;
 };
