@@ -3,7 +3,8 @@ var btncaracter8 = document.getElementById("ochoCarac");
 var btncaracter15 = document.getElementById("carac");
 var mensaje = document.querySelector(".alerta");
 var spacePassword = document.querySelector(".password");
-let carac = 0;
+let carac = 0,
+    aux = 0;
 
 btnGenerar.onclick = function generarPassword() {
     mensaje.removeAttribute("hidden");
@@ -13,9 +14,11 @@ btnGenerar.onclick = function generarPassword() {
 
 btncaracter8.onclick = function caracter8() {
     carac = 8;
+    aux += 1;
 };
 btncaracter15.onclick = function caracter8() {
     carac = 15;
+    aux += 1;
 };
 
 function generar() {
@@ -48,6 +51,9 @@ function generar() {
             "y",
             "z",
         ];
+    if (aux == 0) {
+        carac = 15;
+    }
 
     for (let i = 0; i < carac; i++) {
         let con = Math.random();
