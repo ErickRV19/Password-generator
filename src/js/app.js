@@ -6,6 +6,8 @@ var spacePassword = document.querySelector(".password");
 var checkMayuscula = document.getElementById("checkMayuscula");
 var checkSimbolos = document.getElementById("checkSimbolos");
 var recomendacion = document.querySelector(".recomendacion");
+var checkpalabra = document.getElementById("checkpalabra");
+
 let carac = 0,
     aux = 0;
 
